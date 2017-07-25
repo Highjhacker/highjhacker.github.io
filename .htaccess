@@ -1,6 +1,5 @@
-RewriteEngine on
-RewriteCond %{THE_REQUEST} /index\.html/(.+)\sHTTP [NC]
-RewriteRule ^ /%1 [NE,L,R]
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.+)$ /index.html/$1 [L]
+RewriteEngine On
+RewriteCond %{THE_REQUEST} \ /+(.*?/?)index\.(php|html?)
+RewriteRule ^(.*)index\.(php|html?)$ /$1 [L,R=301]
+
+DirectoryIndex index.html index.php
