@@ -1,3 +1,4 @@
-jolanbeer.be
-
-ext .html
+jolanbeer.be {
+    gzip
+    ext .html
+}
