@@ -24,4 +24,9 @@ $(function() {
         var row = $(this);
         row.css('background','#5b7fa3');
     });
+
+    $('.skill-icons-language').children('.active').each(function(i) {
+        var row = $(this);
+        row.css('background','#81c784');
+    });
 });
